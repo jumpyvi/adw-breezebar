@@ -1,24 +1,18 @@
 
-## Lavanda KDE Theme
+## adw-breezebar
 
-Lavanda kde theme is a clean and concise theme for KDE Plasma desktop.
+Window decorations the for KDE to make QT apps look like adwaita apps, allowing KDE to look good with adwaita apps.
+This uses breeze colors and not adwaita ones. A breeze theme for GTK is recommended.
 
-In this repository you'll find:
+This is forked from https://github.com/vinceliuice/Lavanda-kde, vinceluice did most of the work with the Lavanda theme, I simply changed a few colors and removed the global theme (kept only the decoration theme).
 
-- Aurorae Theme
-- Kvantum Theme
-- Wallpaper Theme
-- Plasma Color Scheme
-- Plasma Desktop Theme
-- Plasma Global Theme
-
-## Installation
+## Installation (ALPHA -> will also install a useless plasma style and some colors are wrong )
 
 ```sh
 ./install.sh
 ```
 
-## Uninstall
+## Uninstall (NYI -> Will not uninstall anything, use ``` rm -r ~/.local/share/aurora/themes/adw-breezebar-* ``` to remove )
 
 ```sh
 ./uninstall.sh
@@ -26,27 +20,16 @@ In this repository you'll find:
 
 ## Recommendations
 
-- For better looking please use this pack with [Kvantum engine](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#distributions).
-
-  Run `kvantummanager` to choose and apply **Lavanda** (or any other Lavanda) theme.
-
-- Install [Colloid icon theme](https://github.com/vinceliuice/Colloid-icon-theme) for a more consistent and beautiful experience.
-
-- Install [Lavanda gtk theme](https://github.com/vinceliuice/Lavanda-gtk-theme) for a more consistent and beautiful experience.
-
-## Donate
-
-If you like my project, you can donate at:
-
-<span class="paypal"><a href="https://www.paypal.me/vinceliuice" title="Donate to this project using Paypal"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal donate button" /></a></span>
+- Use adwaita title bar in native adwaita apps instead of KDE one: ```bash gsettings set org.gnome.desktop.interface icon-theme Adwaita ```
+- Use the Breeze gradience theme: https://gradienceteam.github.io/
 
 ## License
 
 GNU GPL v3
 
 ## preview
+This is the alpha version, colors should be more acurate in futur commits
 
-![light](Screenshot_light.png)
-![dark](Screenshot_dark.png)
+![adw-breezebar](Screenshot_dark.png)
 
 
