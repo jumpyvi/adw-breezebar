@@ -17,10 +17,9 @@ else
   KVANTUM_DIR="$HOME/.config/Kvantum"
 fi
 
-THEME_NAME=Lavanda
+THEME_NAME=adw-breezebar
 
 COLOR_VARIANTS=('-Light' '-Dark')
-THEME_VARIANTS=('' '-Sea')
 
 cp -rf "${SRC_DIR}"/configs/Xresources "$HOME"/.Xresources
 
@@ -36,7 +35,6 @@ install() {
 
   [[ ${color} == '-Dark' ]] && local ELSE_COLOR='Dark'
   [[ ${color} == '-Light' ]] && local ELSE_COLOR='Light'
-  [[ ${theme} == '-Sea' ]] && local ELSE_THEME='Sea'
 
   local AURORAE_THEME="${AURORAE_DIR}/${name}${theme}${color}"
   local PLASMA_THEME="${PLASMA_DIR}/${name}${theme}${color}"
@@ -53,10 +51,6 @@ install() {
   cp -r ${SRC_DIR}/Kvantum/${name}${ELSE_THEME}                                              ${KVANTUM_DIR}
   cp -r ${SRC_DIR}/plasma/desktoptheme/${name}${theme}${color}                               ${PLASMA_DIR}
   cp -r ${SRC_DIR}/plasma/desktoptheme/icons                                                 ${PLASMA_THEME}/icons
-
-  if [[ ${theme} == '-Sea' ]]; then
-    cp -r ${SRC_DIR}/plasma/desktoptheme/icons-Sea/*                                         ${PLASMA_THEME}/icons
-  fi
 
   cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${PLASMA_THEME}/colors
 
