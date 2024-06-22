@@ -18,7 +18,6 @@ else
 fi
 
 THEME_NAME=Lavanda
-LATTE_DIR="$HOME/.config/latte"
 
 COLOR_VARIANTS=('-Light' '-Dark')
 THEME_VARIANTS=('' '-Sea')
@@ -43,13 +42,11 @@ install() {
   local PLASMA_THEME="${PLASMA_DIR}/${name}${theme}${color}"
   local SCHEMES_THEME="${SCHEMES_DIR}/${name}${ELSE_THEME}${ELSE_COLOR}.colors"
   local KVANTUM_THEME="${KVANTUM_DIR}/${name}${ELSE_THEME}"
-  local LATTE_THEME="${LATTE_DIR}/${name}.layout.latte"
 
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rf ${PLASMA_THEME}
   [[ -f ${SCHEMES_THEME} ]] && rm -rf ${SCHEMES_THEME}
   [[ -d ${KVANTUM_THEME} ]] && rm -rf ${KVANTUM_THEME}
-  [[ -f ${LATTE_THEME} ]] && rm -rf ${LATTE_THEME}
 
   cp -r ${SRC_DIR}/aurorae/${name}${theme}${color}                                           ${AURORAE_DIR}
   cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${SCHEMES_DIR}
@@ -63,10 +60,6 @@ install() {
 
   cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${PLASMA_THEME}/colors
 
-  if [[ -d ${LATTE_THEME} ]]; then
-    cp -r ${SRC_DIR}/latte-dock/${name}.layout.latte                                         ${LATTE_THEME}
-    cp -r ${SRC_DIR}/latte-dock/${name}_x2.layout.latte                                      ${LATTE_THEME}
-  fi
 }
 
 echo "Installing '${THEME_NAME} kde themes'..."
