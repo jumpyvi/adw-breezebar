@@ -4,7 +4,7 @@
    height="310"
    id="svg3642"
    sodipodi:version="0.32"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    sodipodi:docname="decoration.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -22,15 +22,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568544"
-     inkscape:cx="469.51889"
-     inkscape:cy="185.88069"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="161.04357"
+     inkscape:cy="143.3659"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1000"
+     inkscape:window-height="965"
      inkscape:window-x="0"
      inkscape:window-y="0"
      width="48px"
@@ -62,9 +62,14 @@
        empspacing="5"
        snapvisiblegridlinesonly="true"
        color="#e51aa1"
-       opacity="0.14901961"
+       opacity="0.14902"
        empcolor="#0065ff"
-       empopacity="0.25098039" />
+       empopacity="0.25098039"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
   </sodipodi:namedview>
   <defs
      id="colors">
@@ -282,7 +287,8 @@
        id="decoration-right"
        transform="matrix(-1,0,0,1,365,0)"
        width="100%"
-       height="100%" />
+       height="100%"
+       style="fill:#292d32;fill-opacity:1" />
     <g
        id="decoration-inactive-topleft"
        transform="translate(140,-31.063)">
@@ -322,7 +328,7 @@
     <path
        d="m 110,200 v 86 h 145 v -86 z"
        id="decoration-center"
-       style="fill:#1b1e24;fill-opacity:1" />
+       style="fill:#292d32;fill-opacity:1" />
     <g
        id="decoration-top"
        transform="translate(-215,-5.99995)">
@@ -335,7 +341,7 @@
       <path
          d="m 325,175.99994 v 30.00002 h 145 v -30.00002 z"
          id="path6092-3"
-         style="fill:#1b1e24;fill-opacity:1" />
+         style="fill:#292d32;fill-opacity:1" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -354,7 +360,7 @@
          d="m 576,121 v 86 h 29 v -86 z"
          id="path6339-9"
          transform="translate(-255.125,76)"
-         style="fill:#1b1e24;fill-opacity:1" />
+         style="fill:#292d32;fill-opacity:1" />
     </g>
     <g
        id="decoration-inactive-bottom"
@@ -490,7 +496,7 @@
       <path
          id="path1023"
          d="m 442,201.0625 c 6.648,0 12,5.352 12,12 v 18 h -29 v -30 z"
-         style="fill:#1b1e24;fill-opacity:1" />
+         style="fill:#292d32;fill-opacity:1" />
       <path
          d="m 442,201.0625 c 6.648,0 12,5.352 12,12 v 0.59961 c 0,-6.4264 -5.352,-11.59961 -12,-11.59961 h -17 v -1 z"
          style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1"
