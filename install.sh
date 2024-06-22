@@ -8,11 +8,9 @@ ROOT_UID=0
 if [ "$UID" -eq "$ROOT_UID" ]; then
   AURORAE_DIR="/usr/share/aurorae/themes"
   SCHEMES_DIR="/usr/share/color-schemes"
-  KVANTUM_DIR="/usr/share/Kvantum"
 else
   AURORAE_DIR="$HOME/.local/share/aurorae/themes"
   SCHEMES_DIR="$HOME/.local/share/color-schemes"
-  KVANTUM_DIR="$HOME/.config/Kvantum"
 fi
 
 THEME_NAME=adw-breezebar
@@ -23,7 +21,6 @@ cp -rf "${SRC_DIR}"/configs/Xresources "$HOME"/.Xresources
 
 mkdir -p                                                                                     ${AURORAE_DIR}
 mkdir -p                                                                                     ${SCHEMES_DIR}
-mkdir -p                                                                                     ${KVANTUM_DIR}
 
 install() {
   local name=${1}
@@ -35,16 +32,13 @@ install() {
 
   local AURORAE_THEME="${AURORAE_DIR}/${name}${theme}${color}"
   local PLASMA_THEME="${PLASMA_DIR}/${name}${theme}${color}"
-  local KVANTUM_THEME="${KVANTUM_DIR}/${name}${ELSE_THEME}"
 
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rf ${PLASMA_THEME}
   [[ -f ${SCHEMES_THEME} ]] && rm -rf ${SCHEMES_THEME}
-  [[ -d ${KVANTUM_THEME} ]] && rm -rf ${KVANTUM_THEME}
 
   cp -r ${SRC_DIR}/aurorae/${name}${theme}${color}                                           ${AURORAE_DIR}
   cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${SCHEMES_DIR}
-  cp -r ${SRC_DIR}/Kvantum/${name}${ELSE_THEME}                                              ${KVANTUM_DIR}
 
 
 }
