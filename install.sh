@@ -8,12 +8,10 @@ ROOT_UID=0
 if [ "$UID" -eq "$ROOT_UID" ]; then
   AURORAE_DIR="/usr/share/aurorae/themes"
   SCHEMES_DIR="/usr/share/color-schemes"
-  PLASMA_DIR="/usr/share/plasma/desktoptheme"
   KVANTUM_DIR="/usr/share/Kvantum"
 else
   AURORAE_DIR="$HOME/.local/share/aurorae/themes"
   SCHEMES_DIR="$HOME/.local/share/color-schemes"
-  PLASMA_DIR="$HOME/.local/share/plasma/desktoptheme"
   KVANTUM_DIR="$HOME/.config/Kvantum"
 fi
 
@@ -25,7 +23,6 @@ cp -rf "${SRC_DIR}"/configs/Xresources "$HOME"/.Xresources
 
 mkdir -p                                                                                     ${AURORAE_DIR}
 mkdir -p                                                                                     ${SCHEMES_DIR}
-mkdir -p                                                                                     ${PLASMA_DIR}
 mkdir -p                                                                                     ${KVANTUM_DIR}
 
 install() {
@@ -38,7 +35,6 @@ install() {
 
   local AURORAE_THEME="${AURORAE_DIR}/${name}${theme}${color}"
   local PLASMA_THEME="${PLASMA_DIR}/${name}${theme}${color}"
-  local SCHEMES_THEME="${SCHEMES_DIR}/${name}${ELSE_THEME}${ELSE_COLOR}.colors"
   local KVANTUM_THEME="${KVANTUM_DIR}/${name}${ELSE_THEME}"
 
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
@@ -49,9 +45,7 @@ install() {
   cp -r ${SRC_DIR}/aurorae/${name}${theme}${color}                                           ${AURORAE_DIR}
   cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${SCHEMES_DIR}
   cp -r ${SRC_DIR}/Kvantum/${name}${ELSE_THEME}                                              ${KVANTUM_DIR}
-  cp -r ${SRC_DIR}/plasma/desktoptheme/${name}${theme}${color}                               ${PLASMA_DIR}
 
-  cp -r ${SRC_DIR}/color-schemes/${name}${ELSE_THEME}${ELSE_COLOR}.colors                    ${PLASMA_THEME}/colors
 
 }
 
