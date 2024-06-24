@@ -4,7 +4,7 @@
    height="24"
    id="svg4428"
    version="1.1"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    sodipodi:docname="maximize.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -39,33 +39,34 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3143028"
-     inkscape:cx="-49.042848"
-     inkscape:cy="-2.3765257"
+     inkscape:zoom="13.091674"
+     inkscape:cx="21.120294"
+     inkscape:cy="13.940158"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="true"
+     inkscape:current-layer="pressed-center"
+     showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1004"
+     inkscape:window-height="965"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      showborder="true"
      inkscape:showpageshadow="false"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#474c52">
+     inkscape:deskcolor="#d8e1eb">
     <inkscape:grid
        type="xygrid"
        id="grid4436"
        empspacing="5"
-       visible="true"
+       visible="false"
        enabled="true"
        snapvisiblegridlinesonly="true"
        originx="0"
        originy="0"
        spacingx="1"
-       spacingy="1" />
+       spacingy="1"
+       units="px" />
   </sodipodi:namedview>
   <g
      inkscape:label="Layer 1"
@@ -104,7 +105,7 @@
     <g
        id="hover-center">
       <circle
-         style="fill:#6a58f0;fill-opacity:1;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="display:inline;fill:#42484f;fill-opacity:1;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle1172"
          cx="12"
          cy="1110.5197"
@@ -134,14 +135,8 @@
     <g
        id="pressed-center">
       <circle
-         style="fill:#6a58f0;fill-opacity:1;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="display:inline;fill:#31363b;fill-opacity:1;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle1176"
-         cx="51"
-         cy="1110.5197"
-         r="11" />
-      <circle
-         style="opacity:0.15;fill:#000000;fill-opacity:1;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
-         id="circle1178"
          cx="51"
          cy="1110.5197"
          r="11" />
